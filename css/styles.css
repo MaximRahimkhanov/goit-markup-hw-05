@@ -823,14 +823,13 @@ button {
   justify-content: center;
   fill: transparent;
 }
-.svg-checkbox {
-}
-input[type="checkbox"]:checked {
+
+.checkbox:checked + .label-checkbox .span-checkbox {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
 }
-.form-link_ {
+.form-link {
   color: #4d5ae5;
 }
 /* #endregion FORM*/
