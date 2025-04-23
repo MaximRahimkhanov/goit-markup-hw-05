@@ -507,6 +507,7 @@ button {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  margin-right: 80px;
 }
 .footer-social-media {
   font-weight: 500;
