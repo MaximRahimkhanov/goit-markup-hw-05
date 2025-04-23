@@ -634,13 +634,14 @@ button {
   pointer-events: none;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  visibility: hidden;
 }
 .modal-overlay.is-open {
   opacity: 1;
   pointer-events: auto;
+  visibility: visible;
 }
 .modal {
-  display: flex;
   justify-content: center;
   align-items: center;
 
@@ -658,6 +659,11 @@ button {
   top: 50%;
   left: 50%;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translate(-50%, -50%);
+}
+
+.modal-overlay:not(.is-open) .modal {
+  transform: translate(-50%, -100%);
 }
 
 .button-close {
@@ -742,6 +748,7 @@ button {
   background-color: #4d5ae5;
   border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin: 0 auto;
 }
 
 .input {
@@ -778,6 +785,7 @@ button {
 .textarea:focus {
   border-color: #4d5ae5;
 }
+
 /* input icons */
 .input-container {
   margin-bottom: 8px;
