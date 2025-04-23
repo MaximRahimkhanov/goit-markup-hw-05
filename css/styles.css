@@ -609,7 +609,9 @@ button {
   display: flex;
   gap: 24px;
 }
-
+.container-subscribe {
+  margin-left: auto;
+}
 /* #endregion FOOTER*/
 
 /* #region FORM and Overlay */
